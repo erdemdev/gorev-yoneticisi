@@ -1,0 +1,101 @@
+{
+  "employees": [
+    {
+      "id": "emp-001",
+      "name": "Ayşe Yılmaz",
+      "email": "ayse.yilmaz@ornek.com",
+      "role": "Backend Developer",
+      "department": "Engineering",
+      "createdAt": "2026-01-10T09:00:00.000Z",
+      "updatedAt": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "emp-002",
+      "name": "Mehmet Demir",
+      "email": "mehmet.demir@ornek.com",
+      "role": "Frontend Developer",
+      "department": "Engineering",
+      "createdAt": "2026-01-12T09:00:00.000Z",
+      "updatedAt": "2026-01-12T09:00:00.000Z"
+    },
+    {
+      "id": "emp-003",
+      "name": "Zeynep Kaya",
+      "email": "zeynep.kaya@ornek.com",
+      "role": "Project Manager",
+      "department": "Product",
+      "createdAt": "2026-01-15T09:00:00.000Z",
+      "updatedAt": "2026-01-15T09:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-001",
+      "name": "Müşteri Portalı",
+      "description": "Kurumsal müşteriler için self-servis portal",
+      "status": "active",
+      "memberIds": ["emp-001", "emp-002", "emp-003"],
+      "createdAt": "2026-02-01T10:00:00.000Z",
+      "updatedAt": "2026-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "prj-002",
+      "name": "Mobil Uygulama v2",
+      "description": "Mevcut mobil uygulamanın yeniden yazımı",
+      "status": "planning",
+      "memberIds": ["emp-002", "emp-003"],
+      "createdAt": "2026-02-10T10:00:00.000Z",
+      "updatedAt": "2026-02-10T10:00:00.000Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-001",
+      "title": "Auth API endpointleri",
+      "description": "JWT tabanlı giriş / kayıt uç noktaları",
+      "status": "in-progress",
+      "priority": "high",
+      "projectId": "prj-001",
+      "assigneeId": "emp-001",
+      "dueDate": "2026-11-20",
+      "createdAt": "2026-11-01T08:00:00.000Z",
+      "updatedAt": "2026-11-10T12:00:00.000Z"
+    },
+    {
+      "id": "tsk-002",
+      "title": "Dashboard UI",
+      "description": "Ana sayfa istatistik kartları ve grafikler",
+      "status": "pending",
+      "priority": "medium",
+      "projectId": "prj-001",
+      "assigneeId": "emp-002",
+      "dueDate": "2026-11-25",
+      "createdAt": "2026-11-02T08:00:00.000Z",
+      "updatedAt": "2026-11-02T08:00:00.000Z"
+    },
+    {
+      "id": "tsk-003",
+      "title": "Sprint planı hazırla",
+      "description": "Kasım sprint hedeflerini netleştir",
+      "status": "done",
+      "priority": "low",
+      "projectId": "prj-002",
+      "assigneeId": "emp-003",
+      "dueDate": "2026-11-05",
+      "createdAt": "2026-10-28T08:00:00.000Z",
+      "updatedAt": "2026-11-05T16:00:00.000Z"
+    },
+    {
+      "id": "tsk-004",
+      "title": "Performans iyileştirmesi",
+      "description": "Listeleme sorgularında N+1 sorununu gider",
+      "status": "pending",
+      "priority": "critical",
+      "projectId": "prj-001",
+      "assigneeId": null,
+      "dueDate": "2026-11-18",
+      "createdAt": "2026-11-12T08:00:00.000Z",
+      "updatedAt": "2026-11-12T08:00:00.000Z"
+    }
+  ]
+}
